@@ -20,5 +20,6 @@ public class CharAndBoolean {
 		
 		char varchar1 = '\u00A7';
 		System.out.println(varchar1);
+		System.out.println("to change commit message");
 	}
 }
