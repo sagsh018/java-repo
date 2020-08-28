@@ -54,5 +54,7 @@ public class Float_Test {
 		int marker = 100;
 		double percentage = marker * 0.46f;
 		System.out.println("percentage is : " + percentage);
+		
+		System.out.println("Line added to change commit message");
 	}
 }
