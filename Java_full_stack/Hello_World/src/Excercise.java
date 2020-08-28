@@ -17,5 +17,17 @@ public class Excercise {
 		System.out.println(actual);
 		// 4510
 		
+		
+		short minvalue = Short.MIN_VALUE;
+		short maxvalue = Short.MAX_VALUE;
+		System.out.println(minvalue);
+		System.out.println(maxvalue);
+		
+		byte minbyte = Byte.MIN_VALUE;
+		byte maxbyte = Byte.MAX_VALUE;
+		
+		System.out.println(minbyte);
+		System.out.println(maxbyte);
+		
 	} 
 }
