@@ -48,7 +48,8 @@ public class Int_Test {
 		System.out.println(byte_min_value);
 		byte byte_max_value = Byte.MAX_VALUE;
 		System.out.println(byte_max_value);
-	
+		
+		System.out.println("This line is added in order to update commit message for this file");
 		
 	}
 }
