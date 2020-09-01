@@ -13,5 +13,19 @@ public class DoWhileLoop {
 			System.out.println("Value of i : "+ i);
 			i++;
 		}while(i<=10);
+		
+		int j = 1, k = 1;
+		do {
+			System.out.println("i = "+i+" "+"j = "+j);
+			j++;
+			k++;
+		}while(j<=10 && k<=10);
+		
+		int m=0, n=0;
+		while(m<=10 && n<=10) {
+			System.out.println("m is : "+m+" "+"n is : "+n);
+			m++;
+			n++;
+		}
 	}
 }
