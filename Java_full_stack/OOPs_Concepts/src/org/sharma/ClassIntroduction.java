@@ -35,8 +35,24 @@ public class ClassIntroduction {
 		 */
 		
 		Car car = new Car();
-		car.setSpeed(100);
-	
-		System.out.println("Current speed of a car is : "+ car.getSpeed());
+		
+		// Now lets try to set and get other properties of car as well
+		car.setDoors("closed");
+		System.out.println("The doors of car are : "+ car.getDoors());
+		
+		car.setDriver("Boarded");
+		System.out.println("The driver has : "+ car.getDriver() + " car");
+		
+		car.setEngine("Started");
+		System.out.println("The Engine of car is : "+car.getEngine());
+		
+		if (car.setrun()) {
+			car.setSpeed(50);
+		}
+		else {
+			System.out.println("Car not ready to run");
+		}
+		
+		System.out.println("Car is currently : "+ car.getRun());
 	}
 }
