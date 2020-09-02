@@ -4,7 +4,7 @@ public class MethodOverLoading1 {
 		 * So here we are going to see more examples of method overloading 
 		 */
 		System.out.println(sum(10, 20));
-		System.out.println(sum(10, 5.5f)); // Notice here letter f or F is important to indicate float data type, otherwise jave will take it as
+		System.out.println(sum(10, 5.5f)); // Notice here letter f or F is important to indicate float data type, otherwise java will take it as
 											// double by default and will throw error
 		
 		System.out.println(sum(3.4d, 5.6d));
