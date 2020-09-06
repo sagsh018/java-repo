@@ -1,0 +1,3 @@
+1) Better real life depiction
+2) Inner class could be only used by the outer class
+3) Easy access, as the inner object is implicitly available inside our outer class
