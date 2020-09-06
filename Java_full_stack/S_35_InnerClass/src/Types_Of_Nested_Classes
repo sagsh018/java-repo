@@ -1,0 +1,33 @@
+There are two types of nested classes
+1) Static Nested class
+2) Non static nested class
+
+Non static nested classes are further classified as :
+a) Member inner class
+b) Local inner class
+c) Anonymous inner class
+
+Member inner class
+==================
+We have already seen the example of these types of classes in this lecture. examples are Engine and Lock classes
+So member inner class is a non static class inside a non static class
+
+Local inner class
+==================
+This is a class inside a scope of a code block and this code block could be a method as well, and local inner class
+has a scope limited to that code block only. we will see the example of this in further videos.
+
+Anonymous inner class
+=====================
+This is a name less class inside a class. So there is no name to class and since it has no name so it can be used only
+once in the lifetime.
+
+Now this Non static nested class branch is simply called as inner class, and this is due to the fact that, an instance of
+a non static inner class contains the instance of a inner class. or we can say that the instance is inside the other
+instance.
+
+Static Nested classes
+=====================
+None of the static nested class is required to be accessed with the help of object or an instance and we can directly
+access the elements inside the static class
+We will see the functionality of static keyword, before checking the static nested classes in further videos.
