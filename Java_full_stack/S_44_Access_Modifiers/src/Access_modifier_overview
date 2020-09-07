@@ -1,0 +1,24 @@
+ * 4 types of access modifiers 
+ * 1) default :: when there is no access modifier specified then it always a default modifier
+		 * 2) public 
+		 * 3) private
+		 * 4) protected 
+		 * 
+		 * default modifier
+		 * ================
+		 * if any element is prefixed with the default modifier than that element will be available inside the scope of package
+		 * 
+		 * private modifier
+		 * =================
+		 * private element can be accessed only withen the class
+		 * 
+		 * public modifier
+		 * =================
+		 * avialable to all
+		 * 
+		 * protected modifier
+		 * ==================
+		 * element defined as protected, can be accessed both within the package and outside the package, but outside package it is only accessible
+		 * with the help of inheritance,
+		 * 
+		 * Notice that access modifier/ access specifier/ scope modifier/ scope specifier are all one and the same thing.
