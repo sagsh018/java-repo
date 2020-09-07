@@ -18,7 +18,7 @@ public class Outer {
 	}
 	
 	public void outerMethod4() {
-		System.out.println(testvariable2);
+		System.out.println(testvariable1);
 	}
 	
 	
