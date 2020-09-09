@@ -1,5 +1,8 @@
 package org.sharma;
 
+import java.io.*;
+import java.io.FileReader;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -110,6 +113,115 @@ public class Main {
 		 * all the exceptions on to him and you will never reach to the sub class exception at all. and you will also get the compile time
 		 * error stating that subclass catch block is unreachable code and never going to be executed.
 		 */
+		
+		/*
+		 * finally
+		 * =======
+		 * 
+		 * Now finally block is used at the end of try and catch block, if need to be used, it will never come before any catch statement.
+		 * also if the finally block is used, then no matter if exception occured or not, if it occured, then whether it has been catched ot not
+		 * or it raming un catched and taken care by java default exception handling, the finally block will execute at any cost.
+		 * 
+		 * Also note that even if there are mutliple catch blocks then also the finally block gets executed.
+		 * 
+		 * use of finally block
+		 * ====================
+		 * when there are statements that should execute before program ends or not, whether or not exeception occured or not, in those cases 
+		 * finally block is very useful. for example if you have opened a file to work on, and before you could complete you task, exception
+		 * encountered, and because of that control went to catch block then the fille will remain open in system memory. so in such a case
+		 * it will be very helpful if we keep file closing statement in finally block which will execute no matter what.
+		 */
+		
+		int z = 10;
+		try {
+			z = z/0;
+		}
+		catch(ArithmeticException e) {
+			System.out.println(e);
+		}
+		catch(RuntimeException e) {
+			System.out.println(e);
+		}
+		finally {
+			System.out.println("This statement will definitely execute.");
+		}
+		
+		/*
+		 * Now we will understand the use of throw and throws keyword. but for that we would need to have a method out side the main method. 
+		 * so will declare a static method out side our main method and we will call that method inside our main method.
+		 * when we call the method which is having throws in its declaration we have to have a try and catch block in the mehtod calling it
+		 * otherwise this method should also throws the exception. but this is our main method so we will have to handle is over here.
+		 */
+		
+		System.out.println("***************************************");
+		try {
+			someMethod();
+		}
+		catch(FileNotFoundException e) {
+			System.out.println(e);
+		}
+		
+		
+		/*
+		 * So this is how throws keyword is used to indicate that the mehtod you are calling might throw an exception and you need to handle it
+		 * notice that this throws kwyword is only required in case of checked exceptions and not in case of unchecked exception whch comes 
+		 * under RuntimeException class. see the method someMethod1() in which we are having RuntimeException divide by 0 but java is not 
+		 * complaining to have a throws clause in our method declarion, there are two ways to handle this divide exception either in the mehtod
+		 * itself or in our main block as we did in below try catch block
+		 */
+		
+		try {
+			someMethod1();
+		}
+		catch(ArithmeticException e) {
+			System.out.println(e);
+		}
+		
+		/*
+		 * Now there is another concept of "throw" clause. this throw clause is used to explicitly throw and exception in java. suppose there
+		 * is no unchecked and checked excption orccured, then also due to functionality in demand we want to throw and catch the exception
+		 * we could do that with the help of throw class in the method. see the someMethod2() and then see how we are calling it in our mein method
+		 * here
+		 */
+		
+		try {
+			new Main().someMethod2();
+		}
+		catch(RuntimeException e) {
+			System.out.println(e);
+		}
+		
+		/*
+		 * Notice one more thing here, which is, since we are throwing RuntimeException from the method someMethod2(), if we try to catch that 
+		 * exception  using the subclass of that exception then that case it will not be handled and java default exception handling comes into 
+		 * picture. the reason is parent class can handle child class exception but not vice verse.
+		 */
+	}
+	
+	public static void someMethod() throws FileNotFoundException {
+		/*
+		 * lets say here we want to perform some file related stuff and for that we want to open up a file named as file.txt.
+		 */
+		System.out.println("This statement will execute");
+		FileReader f1 = new FileReader("file.txt");
+		//Now as soon as we make the instance of class FileReader in order to open up a file file.txt and try to read that file, we will
+		// start getting an error and that error is because of the fact that the file file.txt is not there in the locaton where java is trying to
+		// search it, so this is leading to an FileNotFoundException and this is being implicitely complained by java. For such kind of
+		// scenarios where a java method is indicating implicit type of exception and the exception is of type checked type that means it is not
+		// under RuntimeException then in that case method declaration has to have a special keyword to indicate that the method you are calling
+		// might throw an exception and you have to handle it. so we will add the throws keyword for that. see the method signature
+		System.out.println("This file will not execute");
+	}
+	
+	public static void someMethod1() {
+		int x = 10;
+		x = x/0;
+	}
+	
+	public void someMethod2() {
+		System.out.println("Tis stetement is before explicitly throwing the exceptionusing throw clause");
+		throw new RuntimeException();
+		// Note that while throwing the exception using throw keyword we make use of exception class constructor.
 	}
 
 }
