@@ -56,12 +56,15 @@ public class Main {
 	}
 	
 	public void case2(int x, int y) {
+		
 		try {
 			System.out.println("Result : " + x/y);
 		}
-		catch(Exception e) {
-			System.out.println("You have wrong value for y");
+		catch(ArithmeticException e) {
+			System.out.println(e);
 		}
+		
+		
 	}
 
 }
