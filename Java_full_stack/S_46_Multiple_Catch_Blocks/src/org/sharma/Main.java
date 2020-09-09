@@ -72,6 +72,7 @@ public class Main {
 		catch(ArithmeticException e) {
 			System.out.println(e);
 		}
+		System.out.println(p);
 		System.out.println(y);
 		
 		/*
@@ -89,9 +90,9 @@ public class Main {
 		 * 
 		 * look at the below example
 		 */
-		
+		int s =20;
 		try {
-			int s = 20/0;
+			s = s/0;
 		}
 		catch(ArithmeticException e) {
 			System.out.println(e);
@@ -99,13 +100,15 @@ public class Main {
 		catch(Exception e) {
 			System.out.println(e);
 		}
+		System.out.println(s);
 		
 		/*
 		 * so in above example we have 2 catch blocks with try, and if you will notice the most relevant one for divide by 0 is arithmetic 
 		 * exception and also it came first to the program flow, hence it will  be executed.
 		 * 
 		 * alsways make sure that you insert the sub class exception before the superclass exception, otherwise super class exception will take
-		 * all the exceptions on to him and you will never reach to the sub class exception at all.
+		 * all the exceptions on to him and you will never reach to the sub class exception at all. and you will also get the compile time
+		 * error stating that subclass catch block is unreachable code and never going to be executed.
 		 */
 	}
 
