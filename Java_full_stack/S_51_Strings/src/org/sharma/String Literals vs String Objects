@@ -1,0 +1,18 @@
+So there are two types with which we can define String class elements.
+1) String Literals
+	They can be simply defined using 
+	String literal_name1 = value1 ( Now suppose this is value 1)
+	String literal_name2 = value1 (So now literal_name1 and 2 both are having same values inside them, so what java will do, java will create one 
+	memory location and store value1 and create to memory references/pointers for both the literals
+	and in this case if you check literal_name1 == literal_name2, then you will get it as true
+	
+2) String object
+	this can be defined using new
+	String str1 = new String("Hello World");
+	String str2 = new String("Hello World");
+	now here str1 and str2 are object of class String and in this case even though both the objects have same value but java will create separate
+	reference for them inside momory. but in this case "==" will not give the correct result, and we will have to use .equals() method
+	
+Take aways
+1) Use String literals instead of objects, Java do the memory optimization in this case
+2) Use String class methods in order to do the comparisons, concatination, replacements, etc.
