@@ -1,0 +1,37 @@
+1) So in Java we have meny types of lists
+	a) ArrayList
+	b) LinkedList
+	c) Stack
+	d) Vector
+	
+2) Practically we will only talk about the first three written above 
+3) Let us see the pros and cons of all these lists one by one
+
+ArrayList
+=========
+
+Pros
+1) Fast to access the data due to index value just like an Array
+2) Easy to access any element from any location because the elements are stored in continuous memory locations and can be referred by the index
+	locations, same as that of an Array
+3) ArrayList can be expanded, that is elements can be added at any point of time and not like an Array where once the size is defined, you cannot
+	expand or contract the size, so expansion and contraction in ArrayList is possible at any given time.
+	
+Cons
+1) Operations in ArrayLists are slow, for example if you want to remove some element from the ArrayList, then it will not happen inplace, it will
+	create another ArrayList with the modified state.
+	so operations on ArrayList like addition, removing, updating the elements takes time
+2) and becasue the operations are not inplace in ArrayList, because of that they consume more memory.
+
+Stack
+=====
+Stack is a LIFO List where the operations only take place on the top. The operations in Stack as we follows: push and pop
+So the Stack class represents a last-in-first-out(LIFO) stack of object.
+it extends the Vector class
+The vector is similar to ArrayList. The only difference is that Vector class methods are synchronized whereas ArrayList class methods are not.
+below are the methods for Stack Class in java
+a) empty(): To test if the stack is empty or not
+b) peek() : looks at the object at the top of a stack without removing it
+c) pop() : removes the object from the top of a stack and return this object as the value of this function
+d) push() : pushes an item on the top of a stack
+e) search(Object o) : returns 1-based position where an object is on stack 
