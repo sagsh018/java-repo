@@ -10,7 +10,7 @@ public class Main {
 		/*
 		 * So here we are going to learn about the collection type "ArrayList"
 		 * So to get started we are going to first create a static ArrayList, see above the main method
-		 * Notice that an ArrayList can contain elements of any data type and the one we have defined above the main method contains the elemets
+		 * Notice that an ArrayList can contain element of any data type and the one we have defined above the main method contains the elements
 		 * of type String. 
 		 * Also notice that we have defined this ArrayList as static, so that we can access this inside our main() method easily.
 		 * Now notice another thing, that is this ArrayList object is created and at the end of statement we have pair of parenthesis for
