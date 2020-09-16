@@ -1,0 +1,22 @@
+1) So this project is created again as the dynamic Web project and here we are going to learn how to execute JSP and a HTML file on tomcat
+2) So in last project we have learnt how to create a servlet. Now here we are going to check out about the JSP's. So JSP's are similar to the view 
+	files/HTML files, but inside JSP file we can execute JSP based code as well
+3) The full form of JSP is "Java Server File"
+4) So lets first create a HTML file and this file as well as JSP file will be created under WebContent folder of project
+	So lets give name to this HTML file as : HelloHTML.html
+	Notice in this file we are going to add the title and also one heading tag in the body part.
+5) To run the html file we can simply right click on it and run it agains the server
+6) Now we will create a JSP file in the same location in our project that is under WebContent. we can again do this by simply right clicking on the
+	WebContent and select new >> JSP file, give the name of file as "HelloJSP.jsp" and then click on finish
+7) Notice that in this .jsp file, it will be very similar to the HTML file except that it will have the JSP tags and code as well and we will taka 
+	look at later.
+8) Note that we can make use of HTMl Tags in the JSP file along with the JSP code.
+9) so for now lets add the simple title to the page and also one simple heading
+10) Till whatever we have seen in HTML file and JSP file, we can make sure that there is no difference between JSP file and HTML file, except that in
+	JSP file we can make use of JSP code and JSTL code as well. and we will learn about these in later videos
+11) Now lets run it against the server. 
+	URL ==> http://localhost:8080/W_02_Hello_JSP/HelloJSP.jsp
+	
+Note ==> We are adding the servlet-api.jar, in order to have our class HttpServlet available to us
+for this
+	right click on project >> Build path >> configure build path >> libraries >> add the external libraries from tomcat /bin folder.
