@@ -1,0 +1,38 @@
+1) So here we are going to talk about the JSP scripting elements
+2) There are in total 5 scripting elements available in JSP
+	a) Expression 
+		Syntax 
+		======
+		<%= expression %>
+		example
+		=======
+		<%= 2*5 %>
+	b) Scriptlet
+		Syntax
+		======
+		<% scriptlets %>
+		example
+		=======
+		<% out.println("Hello World"); %>
+	c) Declaration
+		Syntax
+		======
+		<%! declaration %>
+		example
+		=======
+		<%! public int count = 0; %>
+	d) Directive
+		syntax
+		======
+		<%@ directive %>
+		example
+		=======
+		<%@ page ... %>
+	e) comment
+		syntax
+		======
+		<%-- comment --%>
+		example
+		=======
+		<%-- JSP comment --%>
+3) So suppose we are going to make use of all these expressions in JSPExpressions.jsp file. see that file
